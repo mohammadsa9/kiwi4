@@ -155,6 +155,9 @@ enum zone_stat_item {
 	NR_FREE_CMA_PAGES,
 	NR_VM_ZONE_STAT_ITEMS };
 
+#ifdef CONFIG_UKSM
+       NR_UKSM_ZERO_PAGES,
+#endif	
 /*
  * We do arithmetic on the LRU lists in various places in the code,
  * so it is important to keep the active lists LRU_ACTIVE higher in

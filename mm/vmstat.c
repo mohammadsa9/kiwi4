@@ -745,6 +745,10 @@ const char * const vmstat_text[] = {
 	"nr_dirty_threshold",
 	"nr_dirty_background_threshold",
 
+#ifdef CONFIG_UKSM
+	"nr_uksm_zero_pages",
+#endif
+	
 #ifdef CONFIG_VM_EVENT_COUNTERS
 	"pgpgin",
 	"pgpgout",

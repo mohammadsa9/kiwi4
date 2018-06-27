@@ -304,6 +304,10 @@ struct vm_area_struct {
 #endif
 };
 
+#ifdef CONFIG_UKSM
+	struct vma_slot *uksm_vma_slot;
+#endif
+
 struct core_thread {
 	struct task_struct *task;
 	struct core_thread *next;
